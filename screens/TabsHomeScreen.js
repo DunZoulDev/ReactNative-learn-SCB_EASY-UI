@@ -5,22 +5,19 @@ import {
   Text,
   View,
   FlatList,
-  PixelRatio, 
+  PixelRatio,
 } from 'react-native';
 import React from 'react';
+import {
+  responsiveHeight,
+  responsiveWidth,
+  responsiveFontSize,
+} from 'react-native-responsive-dimensions';
 import {useState, useRef} from 'react';
-import TopProfileHome from './TopProfileHome';
-import TopPayQrBar from './TopPayQrBar';
-import ImgTopMenus from './ImgTopMenus';
-import ImgListBanner from './ImgListBanner';
-
-import {NavigationContainer} from '@react-navigation/native';
-import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import {createStackNavigator} from '@react-navigation/stack';
-import TabBookBank from './TabBookBank';
-import TabPayMent from './TabPayMent';
-import TabNotification from './TabNotification';
-import TabOtherMenus from './TabOtherMenus';
+import TopProfileHome from './components/TopProfileHome';
+import TopPayQrBar from './components/TopPayQrBar';
+import ImgTopMenus from './components/ImgTopMenus';
+import ImgListBanner from './components/ImgListBanner';
 
 const MainHome = () => {
   return (
@@ -30,7 +27,7 @@ const MainHome = () => {
         <TopPayQrBar />
         <ImgTopMenus />
         <ImgListBanner />
-        <Text style={styles.textbottom}>
+        <Text style={styles.lightTextStyle}>
           อ่านวิธีที่เราเก็บรวบรวม ใช้ เปิดเผยข้อมูลส่วนบุคคล
           และเข้าใจสิทธิของคุณ{'\n'}ที่
           <Text style={{alignSelf: 'center', textDecorationLine: 'underline'}}>
@@ -45,20 +42,15 @@ const MainHome = () => {
 export default MainHome;
 
 const styles = StyleSheet.create({
-  container: {
-    flex:1
+  containerStyle: {
+    flex: 1,
   },
-  textbottom: {
-    fontSize: 11,
+  lightTextStyle: {
+    fontSize: responsiveFontSize(1.3),
     textAlign: 'center',
-    margin: 20,
-    marginBottom: 10,
+    margin: responsiveHeight(2),
+    marginBottom: responsiveHeight(3),
     fontFamily: 'Prompt-Regular',
     color: 'black',
-  },
-  viewImage: {
-    position: 'absolute',
-    justifyContent: 'center',
-    alignItems: 'center',
   },
 });

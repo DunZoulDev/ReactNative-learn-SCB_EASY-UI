@@ -1,27 +1,32 @@
 import {Text, StyleSheet, View, Image} from 'react-native';
 import React, {Component} from 'react';
+import {
+  responsiveHeight,
+  responsiveWidth,
+  responsiveFontSize,
+} from 'react-native-responsive-dimensions';
 
 class TopPayQrBar extends Component {
   render() {
     return (
-      <View style={styles.container}>
-        <View style={styles.payment_qr_bar}>
-          <View style={styles.containerElement_scan}>
+      <View style={styles.containerStyle}>
+        <View style={styles.bgStyle}>
+          <View style={styles.containerScanEleStyle}>
             <Image
-              source={require('./icon/icon_scan_01.png')}
+              source={require('../icon/icon_scan_01.png')}
               style={styles.IconStyle}
             />
             <Text style={styles.TextStyle}>สแกนจ่าย</Text>
           </View>
 
           <Image
-            source={require('./icon/icon_line_01.png')}
+            source={require('../icon/icon_line_01.png')}
             style={styles.IconStyle_line}
           />
 
-          <View style={styles.containerElement_qr}>
+          <View style={styles.containerQrEleStyle}>
             <Image
-              source={require('./icon/icon_qr_01.png')}
+              source={require('../icon/icon_qr_01.png')}
               style={styles.IconStyle}
             />
             <Text style={styles.TextStyle}>QR ของฉัน</Text>
@@ -33,48 +38,47 @@ class TopPayQrBar extends Component {
 }
 
 const styles = StyleSheet.create({
-  container: {
+  containerStyle: {
     flex: 1,
     flexDirection: 'row',
     width: '100%',
   },
-  containerElement_scan: {
+  containerScanEleStyle: {
     flex: 1,
     flexDirection: 'row',
     justifyContent: 'center',
+    alignItems: 'center',
   },
-  containerElement_qr: {
+  containerQrEleStyle: {
     flex: 1,
     flexDirection: 'row',
     justifyContent: 'center',
+    alignItems: 'center',
   },
-  payment_qr_bar: {
+  bgStyle: {
     flex: 1,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: '#777777',
-    height: 40,
+    height: responsiveHeight(5),
     width: '100%',
-    marginBottom: 85,
-    marginTop: -81.5,
   },
   IconStyle: {
-    width: 18,
-    height: 18,
-    marginTop: 0,
+    width: responsiveHeight(2.5),
+    height: responsiveHeight(2.5),
   },
   IconStyle_line: {
-    width: 2.5,
-    height: 20,
-    marginTop: 0,
+    width: responsiveWidth(0.6),
+    height: responsiveHeight(3),
   },
   TextStyle: {
-    fontSize: 14,
+    fontSize: responsiveFontSize(1.9),
     fontFamily: 'Prompt-Light',
     textAlign: 'center',
+    textAlignVertical: 'center',
     color: 'white',
-    marginLeft: 10,
+    marginLeft: responsiveWidth(1.5),
   },
 });
 
