@@ -1,17 +1,20 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
-import {responsiveHeight,responsiveWidth,responsiveFontSize} from "react-native-responsive-dimensions";
-
+import {StyleSheet, Text, View} from 'react-native';
+import React from 'react';
+import {
+  responsiveHeight,
+  responsiveWidth,
+  responsiveFontSize,
+} from 'react-native-responsive-dimensions';
 
 const TabPayMent = () => {
   return (
     <View style={styles.containerStyle}>
-      <Text>This is TabPayMent screen</Text>
+      <Text style={styles.TextStyle}>This is PayMent screen</Text>
     </View>
-  )
-}
+  );
+};
 
-export default TabPayMent
+export default TabPayMent;
 
 const styles = StyleSheet.create({
   containerStyle: {
@@ -19,4 +22,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
-})
+  TextStyle: {
+    fontSize: responsiveFontSize(1.3),
+  },
+});

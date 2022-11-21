@@ -6,7 +6,7 @@ import {responsiveHeight,responsiveWidth,responsiveFontSize} from "react-native-
 const TabOtherMenus = () => {
   return (
     <View style={styles.containerStyle}>
-      <Text>This is OtherMenus screen</Text>
+      <Text style={styles.TextStyle}>This is OtherMenus screen</Text>
     </View>
   )
 }
@@ -18,5 +18,8 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+  },
+  TextStyle: {
+    fontSize: responsiveFontSize(1.3),
   },
 })

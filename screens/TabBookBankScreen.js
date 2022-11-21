@@ -9,7 +9,7 @@ import {
 const TabBookBank = () => {
   return (
     <View style={styles.containerStyle}>
-      <Text>This is BookBank screen</Text>
+      <Text style={styles.TextStyle}>This is BookBank screen</Text>
     </View>
   );
 };
@@ -21,5 +21,8 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+  },
+  TextStyle: {
+    fontSize: responsiveFontSize(1.3),
   },
 });

@@ -55,8 +55,8 @@ function BottomTabs() {
             return (
               <Image
                 style={{
-                  width: responsiveWidth(6),
-                  height: responsiveHeight(3.5),
+                  width: responsiveWidth(5),
+                  height: responsiveHeight(3),
                   tintColor: focused ? '#693EAE' : '#C8C8C8',
                 }}
                 source={require('./icon/icon_nav_home_02.png')}
@@ -74,7 +74,7 @@ function BottomTabs() {
             return (
               <Image
                 style={{
-                  width: responsiveWidth(7),
+                  width: responsiveWidth(6),
                   height: responsiveHeight(3.5),
                   tintColor: focused ? '#693EAE' : '#C8C8C8',
                 }}
@@ -113,8 +113,8 @@ function BottomTabs() {
             return (
               <Image
                 style={{
-                  width: responsiveWidth(5),
-                  height: responsiveHeight(3.5),
+                  width: responsiveWidth(4),
+                  height: responsiveHeight(3),
                   tintColor: focused ? '#693EAE' : '#C8C8C8',
                 }}
                 source={require('./icon/icon_nav_noti_02.png')}

@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
   containerRowStyle: {
     flex: 1,
     flexDirection: 'row',
-    marginTop: responsiveHeight(2),
+    marginTop: responsiveHeight(1),
   },
   containerLocationStyle: {
     flex: 1,
