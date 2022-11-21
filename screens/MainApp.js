@@ -55,7 +55,7 @@ function BottomTabs() {
             return (
               <Image
                 style={{
-                  width: responsiveWidth(5),
+                  width: responsiveWidth(5.5),
                   height: responsiveHeight(3),
                   tintColor: focused ? '#693EAE' : '#C8C8C8',
                 }}
@@ -113,7 +113,7 @@ function BottomTabs() {
             return (
               <Image
                 style={{
-                  width: responsiveWidth(4),
+                  width: responsiveWidth(4.5),
                   height: responsiveHeight(3),
                   tintColor: focused ? '#693EAE' : '#C8C8C8',
                 }}
