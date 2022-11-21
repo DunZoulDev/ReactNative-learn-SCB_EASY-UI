@@ -30,7 +30,7 @@ const MainHome = () => {
         <Text style={styles.lightTextStyle}>
           อ่านวิธีที่เราเก็บรวบรวม ใช้ เปิดเผยข้อมูลส่วนบุคคล
           และเข้าใจสิทธิของคุณ{'\n'}ที่
-          <Text style={{alignSelf: 'center', textDecorationLine: 'underline'}}>
+          <Text style={styles.underlineTextStyle}>
             ประกาศนโยบายความเป็นส่วนตัว
           </Text>
         </Text>
@@ -52,5 +52,9 @@ const styles = StyleSheet.create({
     marginBottom: responsiveHeight(3),
     fontFamily: 'Prompt-Regular',
     color: 'black',
+  },
+  underlineTextStyle: {
+    alignSelf: 'center',
+    textDecorationLine: 'underline',
   },
 });

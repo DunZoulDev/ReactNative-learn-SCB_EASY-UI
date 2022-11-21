@@ -5,7 +5,7 @@ import {responsiveHeight,responsiveWidth,responsiveFontSize} from "react-native-
 
 const TabPayMent = () => {
   return (
-    <View style={styles.container}>
+    <View style={styles.containerStyle}>
       <Text>This is TabPayMent screen</Text>
     </View>
   )
@@ -14,7 +14,7 @@ const TabPayMent = () => {
 export default TabPayMent
 
 const styles = StyleSheet.create({
-  container: {
+  containerStyle: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',

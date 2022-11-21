@@ -5,7 +5,7 @@ import {responsiveHeight,responsiveWidth,responsiveFontSize} from "react-native-
 
 const TabNotification = () => {
   return (
-    <View style={styles.container}>
+    <View style={styles.containerStyle}>
       <Text>This is TabNotification screen</Text>
     </View>
   )
@@ -14,7 +14,7 @@ const TabNotification = () => {
 export default TabNotification
 
 const styles = StyleSheet.create({
-  container: {
+  containerStyle: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
