@@ -1,15 +1,14 @@
-import {Text, View, StyleSheet, Image, ImageBackground, Dimensions} from 'react-native';
-import React, {Component} from 'react';
-import {responsiveHeight,responsiveWidth,responsiveFontSize} from "react-native-responsive-dimensions";
-
-const dimensions = Dimensions.get('window');
-const imageHeight = Math.round((dimensions.width * 314) / 820);
-const imageWidth = dimensions.width;
+import { Text, View, StyleSheet, Image, ImageBackground, Dimensions } from 'react-native'
+import React, { Component } from 'react'
+import { responsiveHeight, responsiveWidth, responsiveFontSize } from "react-native-responsive-dimensions"
+const dimensions = Dimensions.get('window')
+const imageHeight = Math.round((dimensions.width * 314) / 820)
+const imageWidth = dimensions.width
 
 
 const TopProfileHome = () => {
-  const name = 'ดุลยวิชญ์';
-  const location = 'กรุงเทพมหานคร';
+  const name = 'ดุลยวิชญ์'
+  const location = 'กรุงเทพมหานคร'
 
   return (
     <View style={styles.containerStyle}>
@@ -21,7 +20,7 @@ const TopProfileHome = () => {
             source={require('../img/profileimg.png')}
             style={styles.profileImgStyle}
           />
-          <View style={{marginTop: responsiveHeight(3.5)}}>
+          <View style={{ marginTop: responsiveHeight(3.5) }}>
             <Text style={styles.headerTextStyle}>สวัสดี</Text>
             <Text style={styles.ligthTextStyle}>{name}</Text>
             <View style={styles.containerLocationStyle}>
@@ -35,14 +34,14 @@ const TopProfileHome = () => {
         </View>
       </ImageBackground>
     </View>
-  );
-};
+  )
+}
 
 const styles = StyleSheet.create({
   containerStyle: {
     flex: 1,
     backgroundColor: 'black',
-    justifyContent:'center',
+    justifyContent: 'center',
   },
   containerRowStyle: {
     flex: 1,
@@ -81,6 +80,6 @@ const styles = StyleSheet.create({
     marginBottom: responsiveHeight(0.8),
     color: 'black',
   },
-});
+})
 
-export default TopProfileHome;
+export default TopProfileHome

@@ -1,10 +1,10 @@
-import {Text, StyleSheet, View, Image} from 'react-native';
-import React, {Component} from 'react';
+import { Text, StyleSheet, View, Image } from 'react-native'
+import React, { Component } from 'react'
 import {
   responsiveHeight,
   responsiveWidth,
   responsiveFontSize,
-} from 'react-native-responsive-dimensions';
+} from 'react-native-responsive-dimensions'
 
 class TopPayQrBar extends Component {
   render() {
@@ -33,7 +33,7 @@ class TopPayQrBar extends Component {
           </View>
         </View>
       </View>
-    );
+    )
   }
 }
 
@@ -80,6 +80,6 @@ const styles = StyleSheet.create({
     color: 'white',
     marginLeft: responsiveWidth(1.5),
   },
-});
+})
 
-export default TopPayQrBar;
+export default TopPayQrBar

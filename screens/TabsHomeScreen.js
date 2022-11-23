@@ -6,18 +6,18 @@ import {
   View,
   FlatList,
   PixelRatio,
-} from 'react-native';
-import React from 'react';
+} from 'react-native'
+import React from 'react'
 import {
   responsiveHeight,
   responsiveWidth,
   responsiveFontSize,
-} from 'react-native-responsive-dimensions';
-import {useState, useRef} from 'react';
-import TopProfileHome from './components/TopProfileHome';
-import TopPayQrBar from './components/TopPayQrBar';
-import ImgTopMenus from './components/ImgTopMenus';
-import ImgListBanner from './components/ImgListBanner';
+} from 'react-native-responsive-dimensions'
+import {useState, useRef} from 'react'
+import TopProfileHome from './components/TopProfileHome'
+import TopPayQrBar from './components/TopPayQrBar'
+import ImgTopMenus from './components/ImgTopMenus'
+import ImgListBanner from './components/ImgListBanner'
 
 const MainHome = () => {
   return (
@@ -36,10 +36,10 @@ const MainHome = () => {
         </Text>
       </ScrollView>
     </View>
-  );
-};
+  )
+}
 
-export default MainHome;
+export default MainHome
 
 const styles = StyleSheet.create({
   containerStyle: {
@@ -57,4 +57,4 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
     textDecorationLine: 'underline',
   },
-});
+})

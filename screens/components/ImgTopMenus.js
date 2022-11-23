@@ -1,10 +1,10 @@
 import { View, Text, Image, StyleSheet, Dimensions } from 'react-native'
 import React from 'react'
-import {responsiveHeight,responsiveWidth,responsiveFontSize} from "react-native-responsive-dimensions";
+import {responsiveHeight,responsiveWidth,responsiveFontSize} from "react-native-responsive-dimensions"
 
-const dimensions = Dimensions.get('window');
-const imageHeight = Math.round((dimensions.width * 340) / 339)/3;
-  const imageWidth = dimensions.width/3.08;
+const dimensions = Dimensions.get('window')
+const imageHeight = Math.round((dimensions.width * 340) / 339)/3
+  const imageWidth = dimensions.width/3.08
 
 const  ImgTopMenus = () => {
     return (
@@ -33,6 +33,6 @@ const styles = StyleSheet.create({
         height: imageHeight,
         marginTop: responsiveHeight(0.8),
       },
-});
+})
 
 export default ImgTopMenus

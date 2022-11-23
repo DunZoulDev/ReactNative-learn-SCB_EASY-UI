@@ -1,14 +1,10 @@
-import {View, Text, Image, StyleSheet, Dimensions} from 'react-native';
-import React from 'react';
-import {
-  responsiveHeight,
-  responsiveWidth,
-  responsiveFontSize,
-} from 'react-native-responsive-dimensions';
+import { View, Text, Image, StyleSheet, Dimensions } from 'react-native'
+import React from 'react'
+import { responsiveHeight, responsiveWidth, responsiveFontSize, } from 'react-native-responsive-dimensions'
 
-const dimensions = Dimensions.get('window');
-const imageHeight = Math.round((dimensions.width * 268) / 821);
-const imageWidth = dimensions.width;
+const dimensions = Dimensions.get('window')
+const imageHeight = Math.round((dimensions.width * 268) / 821)
+const imageWidth = dimensions.width
 
 const ImgListBanner = () => {
   return (
@@ -86,8 +82,8 @@ const ImgListBanner = () => {
         style={styles.imagesbannerstyle}
       />
     </View>
-  );
-};
+  )
+}
 
 const styles = StyleSheet.create({
   containerStyle: {
@@ -99,6 +95,6 @@ const styles = StyleSheet.create({
     width: imageWidth,
     marginTop: responsiveHeight(0.7),
   },
-});
+})
 
-export default ImgListBanner;
+export default ImgListBanner
